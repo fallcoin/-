@@ -1,66 +1,52 @@
-// pages/main/main.js
+// pages/search/search.js
+const { getInfo } = require('../../utils/util.js');
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    questionTitleData: [],
+    page: 0,
+    searchUrl: `https://chenxuan.online/api/view?page=`,
+    loading: ``,
+    searchstr: ``
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    this.setInfo(this);
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
   onReachBottom: function () {
-
+    //下拉显示loading动画，并请求数据
+    this.setData({
+      loading: ``
+    })
+    this.setInfo(this);
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  setInfo: that => {
+    //请求数据的函数
+    getInfo(that.data.page, that.data.searchUrl)
+      .then(questionData => {
+        that.data.questionTitleData = that.data.questionTitleData.concat(questionData.questionTitleData);
+        that.setData({
+          questionTitleData: that.data.questionTitleData,
+        })
+        if (questionData.questionTitleData.length)
+          //当请求的问题列表的长度存在说明请求成功，更新长度
+          that.data.page = questionData.page
+      })
+      .then(() => {
+        //数据更新后取消loading动画
+        that.setData({
+          loading: `display:none;`
+        })
+      })
+  },
+  //失去焦点
+  loseFocus() {
+    //清空搜索框
+    this.setData({
+      searchstr: ""
+    });
+  },
+  endsearchList(e) {
+    wx.navigateTo({
+      url: `../result/result?questionName=${e.detail.value}`
+    })
   }
 })

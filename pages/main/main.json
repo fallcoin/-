@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "item": "/component/item/item",
+    "loading": "/component/loading/loading"
+  }
 }

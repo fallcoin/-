@@ -1,8 +1,16 @@
 <!--pages/main/main.wxml-->
+<image src='../../image/bg.png' class='bg'></image>
 <view class='search'>
-  <view></view>
+  <image src='../../image/search.png' class='search-icon'></image>
   <view class='split-line'></view>
-  <input></input>
+  <input 
+    class='search-input'  
+    value='{{searchstr}}' 
+    bindconfirm="endsearchList" 
+    bindblur='loseFocus'
+    placeholder='有什么想问的'
+  >
+  </input>
 </view>
 
 <swiper class='swiper'>
@@ -36,6 +44,10 @@
     <text class='question-title-name'>热门问题</text>
   </view>
   <view class='question-list'>
-    <view></view>
+    <item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" label="item.label" wx:key="{{index}}"></item>
   </view>
+</view>
+
+<view style='{{loading}}' class='loading'>
+  <loading></loading>
 </view>

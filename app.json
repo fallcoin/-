@@ -7,7 +7,9 @@
     "pages/result/result",
     "component/searchBar/searchBar",
     "component/loading/loading",
-    "pages/main/main"
+    "pages/main/main",
+    "pages/tab",
+    "pages/item-list/item-list"
   ],
   "window": {
     "backgroundTextStyle": "light",
