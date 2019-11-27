@@ -1,0 +1,12 @@
+<!--component/item/item.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='question'>
+  <view class='question__title' bindtap='_changeFoldStatus'>
+    <!-- <image src="../../image/next.png" class='question__title__status' style='{{style.status}}'></image> -->
+    <text class='question__title__content'>{{question}}</text>
+  </view>
+  <view class='question__answer' animation="{{changefold}}" bindtransitionend="animationend">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    <!-- <rich-text class=".wxParse-div" nodes="{{answer}}"></rich-text> -->
+  </view>
+</view>

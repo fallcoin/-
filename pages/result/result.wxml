@@ -1,0 +1,11 @@
+<!--pages/result/result.wxml-->
+<view class="page">
+  <item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" wx:key="{{index}}">
+  </item>
+  <view style='{{loading}}' class='loading'>
+    <loading></loading>
+  </view>
+  <view class="result" style='{{haveResult}}'>
+    <text>没有任何结果</text>
+  </view>
+</view>

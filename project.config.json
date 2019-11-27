@@ -1,0 +1,93 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.0",
+	"appid": "wxcd768f2f26b7980f",
+	"projectname": "%E6%A0%A1%E5%9B%AD%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "logs",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "item",
+					"pathName": "component/item/item",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "searchBar",
+					"pathName": "component/searchBar/searchBar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/result/result",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "loading",
+					"pathName": "component/loading/loading",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "main",
+					"pathName": "pages/main/main",
+					"scene": null
+				}
+			]
+		}
+	}
+}

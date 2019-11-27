@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/index/index",
+    "pages/logs/logs",
+    "component/item/item",
+    "pages/result/result",
+    "component/searchBar/searchBar",
+    "component/loading/loading",
+    "pages/main/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6077FB",
+    "navigationBarTitleText": "华广信息搜索引擎",
+    "navigationBarTextStyle": "white"
+  }
+}

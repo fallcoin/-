@@ -1,0 +1,7 @@
+<!--component/loading/loading.wxml-->
+<view class="lds-ring">
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+</view>

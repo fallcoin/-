@@ -1,0 +1,41 @@
+<!--pages/main/main.wxml-->
+<view class='search'>
+  <view></view>
+  <view class='split-line'></view>
+  <input></input>
+</view>
+
+<swiper class='swiper'>
+  <swiper-item></swiper-item>
+  <swiper-item></swiper-item>
+  <swiper-item></swiper-item>
+</swiper>
+
+<view class='nav'>
+  <view>
+    <view></view>
+    <text>常见问题</text>
+  </view>
+  <view>
+    <view></view>
+    <text>学习资料</text>
+  </view>
+  <view>
+    <view></view>
+    <text>校园生活</text>
+  </view>
+  <view>
+    <view></view>
+    <text>吃喝玩乐</text>
+  </view>
+</view>
+
+<view class='question'>
+  <view class='question-title'>
+    <view class='question-title-line'></view>
+    <text class='question-title-name'>热门问题</text>
+  </view>
+  <view class='question-list'>
+    <view></view>
+  </view>
+</view>

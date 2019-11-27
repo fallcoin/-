@@ -1,0 +1,19 @@
+/* pages/result/result.wxss */
+.result {
+  margin-left: 50%;
+  margin-top: 50%;
+  border: 1rpx solid lightgray;
+  width: 250rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  transform: translateX(-50%);
+  display: none;
+}
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
