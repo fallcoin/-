@@ -10,11 +10,8 @@ const requestPromise = myUrl => {
 const getTitle = (page,searchUrl) => {
   return new Promise((resolve) => {
     let questionData = [];
-    requestPromise(`${searchUrl}${page + 1}`)
-    .then(res => {
+    requestPromise(`${searchUrl}${page + 1}`).then(res => {
       [...questionData] = [...res.data.data];
-    })
-    .then(() => {
       page++;
       resolve({
         questionTitleData: questionData,
@@ -23,7 +20,15 @@ const getTitle = (page,searchUrl) => {
     })
   });
 }
+const getLabel = id =>{
+  return new Promise(resolve => {
+    requestPromise(`https://chenxuan.online/api/preview/type/${id}`).then(res => {
+      resolve(res.data);
+    })
+  })
+}
 module.exports = {
   requestPromise: requestPromise,
-  getInfo: getTitle
+  getTitle: getTitle,
+  getLabel: getLabel
 };

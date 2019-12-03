@@ -1,16 +1,19 @@
 <!--pages/main/main.wxml-->
 <image src='../../image/bg.png' class='bg'></image>
-<view class='search'>
-  <image src='../../image/search.png' class='search-icon'></image>
-  <view class='split-line'></view>
-  <input 
-    class='search-input'  
-    value='{{searchstr}}' 
-    bindconfirm="endsearchList" 
-    bindblur='loseFocus'
-    placeholder='有什么想问的'
-  >
-  </input>
+<view class='top'>
+  <view class='blue'></view>
+  <view class='search'>
+    <image src='../../image/search.png' class='search-icon'></image>
+    <view class='split-line'></view>
+    <input 
+      class='search-input'  
+      value='{{searchstr}}' 
+      bindconfirm="endsearchList" 
+      bindblur='loseFocus'
+      placeholder='有什么想问的'
+    >
+    </input>
+  </view>
 </view>
 
 <swiper class='swiper'>
@@ -20,21 +23,9 @@
 </swiper>
 
 <view class='nav'>
-  <view>
+  <view wx:for="{{category}}" bindtap='{{directToCategory}}'>
     <view></view>
-    <text>常见问题</text>
-  </view>
-  <view>
-    <view></view>
-    <text>学习资料</text>
-  </view>
-  <view>
-    <view></view>
-    <text>校园生活</text>
-  </view>
-  <view>
-    <view></view>
-    <text>吃喝玩乐</text>
+    <text>{{item.name}}</text>
   </view>
 </view>
 
@@ -44,7 +35,7 @@
     <text class='question-title-name'>热门问题</text>
   </view>
   <view class='question-list'>
-    <item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" label="item.label" wx:key="{{index}}"></item>
+    <item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" labelId="{{item.aid}}" wx:key="{{index}}"></item>
   </view>
 </view>
 

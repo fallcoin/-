@@ -5,9 +5,14 @@
   position: fixed;
   z-index: -1;
 }
-.search {
+.top{
+  width: 100%;
+  background-color: #6077FB;
   position: sticky;
-  top: 10rpx;
+  padding-top: 10rpx;
+  top: 0rpx;
+}
+.search {
   margin: 0 50rpx;
   height: 72rpx;
   border: solid 1rpx rgb(121, 121, 121);
@@ -33,7 +38,7 @@
 }
 .search-input {
   padding-left: 10rpx;
-
+  width: 70%;
 }
 .swiper {
   margin: 0 50rpx;
@@ -100,4 +105,10 @@
   border-left: 1rpx solid  rgb(121, 121, 121);
   border-radius: 15rpx 15rpx 0px 0px;
   background-color: rgb(255, 255, 255);
+}
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
