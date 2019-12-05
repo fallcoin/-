@@ -8,7 +8,8 @@
     "component/searchBar/searchBar",
     "component/loading/loading",
     "pages/main/main",
-    "pages/item-list/item-list"
+    "pages/item-list/item-list",
+    "pages/content/content"
   ],
   "window": {
     "backgroundTextStyle": "light",

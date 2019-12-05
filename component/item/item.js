@@ -25,6 +25,11 @@ Component({
           label: label
         })
       });
+    },
+    showContent() {
+      wx.navigateTo({
+        url: `../content/content?id=${this.data.aid}`
+      })
     }
   },
   attached : function() {
