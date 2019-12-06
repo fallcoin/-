@@ -1,0 +1,21 @@
+/* component/list/list.wxss */
+.question-list {
+  border-top: 1rpx solid  rgb(121, 121, 121);
+  border-right: 1rpx solid  rgb(121, 121, 121);
+  border-left: 1rpx solid  rgb(121, 121, 121);
+  border-radius: 15rpx 15rpx 0px 0px;
+  background-color: rgb(255, 255, 255);
+}
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.no-result{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1rpx solid #e2e2e2;
+}

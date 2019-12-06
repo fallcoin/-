@@ -5,31 +5,17 @@ Component({
     searchstr: ""
   },
   methods: {
-    // getfocus() {
-    //   this.setData({
-    //     searchflag: true,
-    //   })
-    // },
+    //失去焦点
     loseFocus() {
-      this.clear();
-    },
-    endsearchList(e) {
-      wx.navigateTo({
-        url: `../result/result?questionName=${e.detail.value}`
-      })
-    },
-    // 取消
-    // cancelsearch() {
-    //   this.setData({
-    //     searchflag: false,
-    //     searchstr: ""
-    //   })
-    // },
-    //清空搜索框
-    clear() {
+      //清空搜索框
       this.setData({
         searchstr: ""
       });
+    },
+    endsearchList(e) {
+      wx.navigateTo({
+        url: `../searchResult/searchResult?searchStr=${ e.detail.value }`
+      })
     }
   }
 })

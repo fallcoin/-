@@ -1,0 +1,6 @@
+<!--pages/item-list/item-list.wxml-->
+<view class='container'>
+  <view wx:if="{{dataUrl}}">
+    <List id="itemList" url="{{dataUrl}}"/>
+  </view>
+</view>

@@ -1,10 +1,12 @@
-<view class="wrapper">
-    <view class='tit_seabox'>
-        <view class="tit_seabox_bar {{searchflag?'tit_start_search':''}}">
-            <icon type='search' size="32rpx"></icon>
-            <input type="text" bindconfirm="endsearchList" bindblur='loseFocus' value='{{searchstr}}' placeholder='请输入你的问题' />
-            <!-- <icon bindtap='clear' wx:if="{{searchflag}}" type='clear' size="28rpx"></icon> -->
-        </view>
-        <!-- <view wx:if="{{searchflag}}" bindtap='cancelsearch' class="seabtn">取消</view> -->
-    </view>
-</view>
+<view class='search'>
+    <image src='../../image/search.png' class='search-icon'></image>
+    <view class='split-line'></view>
+    <input 
+      class='search-input'  
+      value='{{searchstr}}' 
+      bindconfirm="endsearchList" 
+      bindblur='loseFocus'
+      placeholder='有什么想问的'
+    >
+    </input>
+  </view>

@@ -1,0 +1,7 @@
+/* pages/item-list/item-list.wxss */
+.container{
+  background-color: #e2e2e2;
+  display: block;
+  padding: 0 35rpx;
+  padding-top: 10rpx;
+}

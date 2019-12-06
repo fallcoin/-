@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Item": "/component/item/item",
+    "Loading": "/component/loading/loading"
+  }
+}

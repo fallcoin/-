@@ -2,18 +2,7 @@
 <image src='../../image/bg.png' class='bg'></image>
 <view class='top'>
   <view class='blue'></view>
-  <view class='search'>
-    <image src='../../image/search.png' class='search-icon'></image>
-    <view class='split-line'></view>
-    <input 
-      class='search-input'  
-      value='{{searchstr}}' 
-      bindconfirm="endsearchList" 
-      bindblur='loseFocus'
-      placeholder='有什么想问的'
-    >
-    </input>
-  </view>
+  <SearchBar />
 </view>
 
 <swiper class='swiper'>
@@ -23,7 +12,7 @@
 </swiper>
 
 <view class='nav'>
-  <view wx:for="{{category}}" bindtap='{{directToCategory}}'>
+  <view wx:for="{{category}}" bindtap='{{directToCategory}}' wx:key="{{item.id}}">
     <view></view>
     <text>{{item.name}}</text>
   </view>
@@ -34,11 +23,5 @@
     <view class='question-title-line'></view>
     <text class='question-title-name'>热门问题</text>
   </view>
-  <view class='question-list'>
-    <item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" labelId="{{item.aid}}" wx:key="{{index}}"></item>
-  </view>
-</view>
-
-<view style='{{loading}}' class='loading'>
-  <loading></loading>
+  <List id="itemList" url="{{dataUrl}}"/>
 </view>

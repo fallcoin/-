@@ -1,15 +1,13 @@
 {
   "pages": [
-    "pages/search/search",
     "pages/index/index",
     "pages/logs/logs",
     "component/item/item",
-    "pages/result/result",
-    "component/searchBar/searchBar",
     "component/loading/loading",
     "pages/main/main",
-    "pages/item-list/item-list",
-    "pages/content/content"
+    "pages/searchResult/searchResult",
+    "pages/content/content",
+    "component/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",

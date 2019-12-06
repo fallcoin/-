@@ -9,14 +9,8 @@ const requestPromise = myUrl => {
 }
 const getTitle = (page,searchUrl) => {
   return new Promise((resolve) => {
-    let questionData = [];
     requestPromise(`${searchUrl}${page + 1}`).then(res => {
-      [...questionData] = [...res.data.data];
-      page++;
-      resolve({
-        questionTitleData: questionData,
-        page: page
-      })
+      resolve(res.data.data)
     })
   });
 }

@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "item": "/component/item/item",
-    "searchBar": "/component/searchBar/searchBar",
-    "loading": "/component/loading/loading"
-  }
-}
