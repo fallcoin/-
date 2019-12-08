@@ -1,0 +1,17 @@
+/* pages/category/category.wxss */
+.container {
+  background-color: #e2e2e2;
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  padding-top: 0;
+}
+.search-bar {
+  position: sticky;
+  top: 0;
+  padding-top: 10rpx;
+  background-color: #e2e2e2;
+  width: 100%;
+}
+.list {
+  margin-top: 30rpx;
+}

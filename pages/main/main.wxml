@@ -5,15 +5,22 @@
   <SearchBar />
 </view>
 
-<swiper class='swiper'>
-  <swiper-item></swiper-item>
-  <swiper-item></swiper-item>
-  <swiper-item></swiper-item>
+<swiper 
+  class='swiper' 
+  autoplay='true' 
+  circular='true' 
+  bindchange='swiperChange'
+>
+  <swiper-item wx:for='{{swiperItems}}' wx:key='{{index}}'>
+    <image src='{{item}}' bindtap="swipclick"></image>
+  </swiper-item>
 </swiper>
 
 <view class='nav'>
-  <view wx:for="{{category}}" bindtap='{{directToCategory}}' wx:key="{{item.id}}">
-    <view></view>
+  <view wx:for="{{category}}" bindtap='directToCategory' wx:key="{{item.id}}" data-id='{{item.id}}'>
+    <view>
+      <image src='{{item.src}}'></image>
+    </view>
     <text>{{item.name}}</text>
   </view>
 </view>
