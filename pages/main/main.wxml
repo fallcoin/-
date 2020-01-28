@@ -17,7 +17,7 @@
 </swiper>
 
 <view class='nav'>
-  <view wx:for="{{category}}" bindtap='directToCategory' wx:key="{{item.id}}" data-id='{{item.id}}'>
+  <view wx:for="{{category}}" bindtap='directToCategory' wx:key="{{item.id}}" data-key='{{item.key}}'>
     <view>
       <image src='{{item.src}}'></image>
     </view>
@@ -30,5 +30,13 @@
     <view class='question-title-line'></view>
     <text class='question-title-name'>热门问题</text>
   </view>
-  <List id="itemList" url="{{dataUrl}}"/>
+  <!-- <List id="itemList" url="{{dataUrl}}"/> -->
+  <view wx:for="{{hotQuestions}}" class='hotQuestion' bindtap='directToPage' data-id='{{item.aid}}'>
+    <view class='tip'>HOT</view>
+    <text class='item-title'>{{item.title}}</text>
+  </view>
+</view>
+
+<view class="subscript">
+  <Subscript />
 </view>

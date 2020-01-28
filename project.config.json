@@ -37,19 +37,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
 					"name": "logs",
 					"pathName": "pages/logs/logs",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "search",
-					"pathName": "pages/search/search",
 					"query": "",
 					"scene": null
 				},
@@ -85,6 +78,21 @@
 					"id": -1,
 					"name": "main",
 					"pathName": "pages/main/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "subscript",
+					"pathName": "component/subscript/subscript",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "item",
+					"pathName": "pages/category/category",
+					"query": "",
 					"scene": null
 				}
 			]

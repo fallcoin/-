@@ -12,6 +12,6 @@ Page({
     this.itemList = this.selectComponent("#itemList");
   },
   onReachBottom: function () {
-    this.itemList.setInfo();
+    this.itemList.setTitle();
   }
 })

@@ -1,4 +1,5 @@
-<view class='search'>
+<view class='box'>
+  <view class='search'>
     <image src='../../image/search.png' class='search-icon'></image>
     <view class='split-line'></view>
     <input 
@@ -10,3 +11,4 @@
     >
     </input>
   </view>
+</view>

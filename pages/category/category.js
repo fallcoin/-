@@ -7,7 +7,7 @@ Page({
   },
   onLoad: function (options) {
     this.setData({
-      dataUrl: `https://chenxuan.online/api/view?page=`
+      dataUrl: `https://chenxuan.online/api/preview/class/${options.key}?page=`
     })
     this.itemList = this.selectComponent("#itemList");
   },

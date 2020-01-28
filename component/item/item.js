@@ -9,23 +9,15 @@ Component({
       type: Number,
       value: 0
     },
-    labelId: {
-      type: Number,
-      value: 0
+    label: {
+      type: String,
+      value: ``
     }
   },
   data: {
     // 这里是一些组件内部数据
-    label: ``
   },
   methods: {
-    setLabel(id) {
-      getLabel(id).then(label => {
-        this.setData({
-          label: label
-        })
-      });
-    },
     showContent() {
       wx.navigateTo({
         url: `../content/content?id=${this.data.aid}`
@@ -33,6 +25,5 @@ Component({
     }
   },
   attached : function() {
-    this.setLabel(this.properties.labelId);
   }
 })

@@ -1,0 +1,17 @@
+.subsctipt {
+  float: right;
+  display: flex;
+}
+.subsctipt-text {
+  font-family: Chalkboard;
+  font-size: 25rpx;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  color: rgb(170, 170, 170);
+}
+.subsctipt-image {
+  margin-left: 5rpx;
+  width: 93px;
+  height: 50px;
+}

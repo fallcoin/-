@@ -8,7 +8,8 @@
     "pages/searchResult/searchResult",
     "pages/content/content",
     "component/list/list",
-    "pages/category/category"
+    "pages/category/category",
+    "component/subscript/subscript"
   ],
   "window": {
     "backgroundTextStyle": "light",

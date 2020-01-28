@@ -1,12 +1,12 @@
 <!--component/list/list.wxml-->
-<view wx:if="{{questionTitleData.length === 0}}">
-  <view class='no-result'>没有任何结果</view>
-</view>
-<view wx:else>
+<view wx:if="{{compelete}}">
   <view class='question-list'>
-      <Item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" labelId="{{item.aid}}" wx:key="{{index}}" />
+      <Item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" label="{{item.label}}" wx:key="{{index}}" />
   </view>
-  <view style='{{loading}}' class='loading'>
+</view>
+<view style='{{loading}}' class='loading'>
     <Loading></Loading>
-  </view>
+</view>
+<view wx:if="{{isEmpty}}">
+  <view class='no-result'>没有任何结果</view>
 </view>

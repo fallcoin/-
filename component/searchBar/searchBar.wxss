@@ -1,6 +1,5 @@
 .search {
   height: 72rpx;
-  border: solid 1rpx rgb(121, 121, 121);
   border-width: 1rpx;
   border-style: solid;
   border-color: rgb(121, 121, 121);

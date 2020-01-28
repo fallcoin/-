@@ -1,7 +1,7 @@
 .question {
   display: flex;
   flex-direction: column;
-  padding-left: 92rpx;
+  padding-left: 70rpx;
   padding-right: 92rpx;
   padding-top: 48rpx;
   padding-bottom: 58rpx;

@@ -1,17 +1,18 @@
 /* pages/category/category.wxss */
 .container {
-  background-color: #e2e2e2;
-  padding-left: 35rpx;
-  padding-right: 35rpx;
-  padding-top: 0;
+  background-color: rgba(215, 215, 215, 0.2);
+  display: block;
+  padding: 0;
 }
 .search-bar {
   position: sticky;
   top: 0;
-  padding-top: 10rpx;
-  background-color: #e2e2e2;
-  width: 100%;
+  padding: 10rpx 0;
+  background-color: rgba(215, 215, 215, 0.2);
+  margin: 0 35rpx;
 }
 .list {
-  margin-top: 30rpx;
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+  margin-right: 35rpx;
 }
