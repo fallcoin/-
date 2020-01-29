@@ -31,7 +31,13 @@
     <text class='question-title-name'>热门问题</text>
   </view>
   <!-- <List id="itemList" url="{{dataUrl}}"/> -->
-  <view wx:for="{{hotQuestions}}" class='hotQuestion' bindtap='directToPage' data-id='{{item.aid}}'>
+  <view wx:for="{{hotQuestions}}" 
+  class='hotQuestion' 
+  bindtap='directToPage' 
+  data-id='{{item.aid}}'
+  data-title='{{item.title}}'
+  wx:key='{{index}}'
+  bindlongtap='directToMain2'>
     <view class='tip'>HOT</view>
     <text class='item-title'>{{item.title}}</text>
   </view>

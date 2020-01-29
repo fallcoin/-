@@ -1,0 +1,82 @@
+/* pages/feedback/feedback.wxss */
+.title {
+  margin-top: 55rpx;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: transparent;
+  font-family: PingFangSC-Semibold;
+  font-size: 45rpx;
+  font-weight: 650;
+  line-height: normal;
+  color: rgb(0, 0, 0);
+}
+.category {
+  margin-left: 65rpx;
+  margin-top: 43rpx;
+}
+.category-title {
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  font-weight: 650;
+  color: rgb(127, 127, 127);
+}
+.category-icon {
+  margin-top: 15rpx;
+  width: 313rpx;
+  height: 72rpx;
+  opacity: 0.5;
+  border-radius: 0px 15rpx 15rpx;
+  background-color: rgb(217, 0, 27);
+}
+.category-input {
+  top: 4rpx;
+  left: 2rpx;
+  position: relative;
+  width: 313rpx;
+  height: 72rpx;
+  border-radius: 0px 15rpx 15rpx;
+  background-color: rgba(255, 255, 0, 0.804);
+  padding-left: 10rpx;
+  color: #fff;
+  line-height: 72rpx;
+}
+.content {
+  margin-top: 30rpx;
+  margin-left: 65rpx;
+  margin-right: 65rpx;
+}
+.content-title {
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  font-weight: 650;
+  color: rgb(127, 127, 127);
+}
+.content-input {
+  margin-top: 15rpx;
+  height: 495rpx;
+  border-radius: 0px 55rpx 55rpx;
+  background-color: rgb(2, 167, 240);
+  padding-left: 10rpx;
+  color: #fff;
+  line-height: 72rpx;
+}
+.btn {
+  width: 90rpx;
+  height: 90rpx; 
+  border-radius: 50%;
+  margin-top: 50rpx;
+  margin-right: 68rpx;
+  background-color: rgb(96, 119, 251);
+  padding: 0;
+}
+.btn image {
+  width: 60rpx;
+  height: 60rpx; 
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.subscript {
+  margin-top: 60rpx;
+}

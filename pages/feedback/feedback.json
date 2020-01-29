@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "List": "/component/list/list",
     "Subscript": "/component/subscript/subscript"
   }
 }

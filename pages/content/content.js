@@ -2,14 +2,20 @@
 const { requestPromise } = require('../../utils/util.js')
 Page({
   data: {
-    content: ``
+    content: ``,
+    title: ``
   },
   onLoad: function (options) {
     requestPromise(`https://chenxuan.online/api/preview/${options.id}`).then(res => {
       this.setData({
-        content: res.data
+        content: res.data,
+        title: options.title
       })
     });
-    console.log(this.data.content);
+  },
+  directToFeedback: function() {
+    wx.navigateTo({
+      url: `../feedback/feedback`
+    })
   }
 })

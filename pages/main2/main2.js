@@ -7,31 +7,37 @@ Page({
     category: [{
       name: `常见问题`,
       key: `常见问题`,
-      src: `../../asset/usual.png`
+      src: `../../asset/usual.png`,
+      questionTitle: []
     },{
       name: `学习资料`,
       key: `学习资料`,
-      src: `../../asset/data.png`
+      src: `../../asset/data.png`,
+      questionTitle: []
     },{
       name: `校园生活`,
       key: `校园生活`,
-      src: `../../asset/live.png`
+      src: `../../asset/live.png`,
+      questionTitle: []
     },{
       name: `吃喝玩乐`,
       key: `吃喝玩乐`,
-      src: `../../asset/enjoy.png`
+      src: `../../asset/enjoy.png`,
+      questionTitle: []
     }],
     swiperItems: [`../../asset/background.png`, `../../asset/background.png`, `../../asset/background.png`],
-    swiperCurrent: -1,
-    hotQuestions: []
+    swiperCurrent: -1
   },
   onLoad: function () {
     //this.itemList = this.selectComponent("#itemList");
-    getTitle(0, 'https://chenxuan.online/api/view?page=')
-    .then(data => {
-      this.data.hotQuestions = data.splice(0, 4);
-      this.setData({
-        hotQuestions: this.data.hotQuestions
+    this.data.category.forEach(item => {
+      getTitle(0, `https://chenxuan.online/api/preview/class/${item.name}?page=`)
+      .then(data => {
+        item.questionTitle.push(data[0]);
+        item.questionTitle.push(data[1]);
+        this.setData({
+          category: this.data.category
+        })
       })
     })
   },
@@ -52,11 +58,6 @@ Page({
   directToPage: function(e) {
     wx.navigateTo({
       url: `../content/content?id=${e.currentTarget.dataset.id}&title=${e.currentTarget.dataset.title}`
-    })
-  },
-  directToMain2: function() {
-    wx.navigateTo({
-      url: `../main2/main2`
     })
   }
 })

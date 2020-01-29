@@ -7,7 +7,7 @@ const requestPromise = myUrl => {
     })
   })
 }
-const getTitle = (page,searchUrl) => {
+const getTitle = (page, searchUrl) => {
   return new Promise((resolve) => {
     requestPromise(`${searchUrl}${page + 1}`).then(res => {
       resolve(res.data.data)

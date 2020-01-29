@@ -28,16 +28,19 @@ Component({
           loading: `display: block`,
           isLoading: true
         })
-        getTitle(this.data.page, this.data.searchUrl).then(questionData => {
-          if (questionData.length) {
+        getTitle(this.data.page, this.data.searchUrl)
+        .then(questionData => {
+          if(questionData.length) {
             let promiseQueue = []
             questionData.forEach(current => {
-              let pr = getLabel(current.aid).then(label => {
+              let pr = getLabel(current.aid)
+              .then(label => {
                 current.label = label;
               });
               promiseQueue.push(pr);
             })
-            Promise.all(promiseQueue).then(() => {
+            Promise.all(promiseQueue)
+            .then(() => {
               this.data.questionTitleData = this.data.questionTitleData.concat(questionData);
               this.data.page++;
               this.setData({
@@ -49,10 +52,14 @@ Component({
             })
           } else if(this.data.questionTitleData){
             this.setData({
-              isEmpty: false,
-              loading: `display:none;`,
+              loading: `display: none;`,
               isLoading: false
             })
+            if (this.data.questionTitleData.length == 0) {
+              this.setData({
+                isEmpty: true
+              })
+            }
           }
         })
       }

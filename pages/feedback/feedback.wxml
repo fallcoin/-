@@ -1,0 +1,20 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='title'>
+  <text>问题反馈</text>
+</view>
+<view class='category'>
+  <text class='category-title'>问题分类</text>
+  <view class='category-icon'>
+    <input class='category-input'></input>
+  </view>
+</view>
+<view class='content'>
+  <text class='content-title'>问题详情</text>
+  <textarea class='content-input' type='texarea'></textarea>
+</view>
+<button class='btn'>
+  <image src='../../asset/arrow.png'></image>
+</button>
+<view class='subscript'>
+  <Subscript />
+</view>
