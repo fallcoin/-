@@ -1,7 +1,9 @@
 <!--component/list/list.wxml-->
 <view wx:if="{{compelete}}">
   <view class='question-list'>
-      <Item wx:for="{{questionTitleData}}" question="{{item.title}}" aid="{{item.aid}}" label="{{item.label}}" wx:key="{{index}}" />
+    <view wx:for="{{questionTitleData}}" class='item' wx:key="{{index}}">
+      <Item question="{{item.title}}" aid="{{item.aid}}" label="{{item.label}}"/>
+    </view>
   </view>
 </view>
 <view style='{{loading}}' class='loading'>

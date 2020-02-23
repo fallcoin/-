@@ -1,8 +1,6 @@
 .search {
   height: 72rpx;
   border-width: 1rpx;
-  border-style: solid;
-  border-color: rgb(121, 121, 121);
   border-radius: 15rpx;
   background-color: rgb(255, 255, 255);
   display: flex;

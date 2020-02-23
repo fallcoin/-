@@ -1,0 +1,5 @@
+<!--component/user/user.wxml-->
+<view class="{{isUser ? 'user' : 'service'}}" wx:if="{{ready}}">
+  <image class='avatar' src='{{avatar}}'></image>
+  <view class="communication {{isUser ? 'user-communication' : 'service-communication'}}">{{comstr}}</view>
+</view>

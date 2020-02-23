@@ -2,6 +2,9 @@
 page {
   background-color: rgba(215, 215, 215, 0.2);
 }
+.search-bar .search {
+  border-color: #fff;
+}
 .search-bar {
   position: sticky;
   top: 0;
@@ -15,4 +18,5 @@ page {
 }
 .subscript {
   margin-top: 35rpx;
+  margin-bottom: 20rpx;
 }

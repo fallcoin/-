@@ -1,5 +1,5 @@
 <!--component/subscript/subscript.wxml-->
 <view class='subsctipt'>
-  <text class='subsctipt-text'>Powered\nby</text>
+  <text class='subsctipt-text'>Powered by</text>
   <image src='../../asset/xingkonglogo.png' class='subsctipt-image'></image>
 </view>

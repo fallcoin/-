@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "Subscript": "/component/subscript/subscript"
+    "Subscript": "/component/subscript/subscript",
+    "User": "/component/user/user"
   }
 }

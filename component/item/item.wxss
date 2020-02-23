@@ -5,7 +5,7 @@
   padding-right: 92rpx;
   padding-top: 48rpx;
   padding-bottom: 58rpx;
-  border-bottom: 1rpx solid rgb(121, 121, 121);
+  background-color: rgb(255, 255, 255);
 }
 .question-title {
   font-weight: 700;

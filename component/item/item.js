@@ -20,7 +20,7 @@ Component({
   methods: {
     showContent() {
       wx.navigateTo({
-        url: `../content/content?id=${this.data.aid}`
+        url: `../content/content?id=${this.data.aid}&title=${this.properties.question}`
       })
     }
   },

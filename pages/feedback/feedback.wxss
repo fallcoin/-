@@ -1,82 +1,48 @@
 /* pages/feedback/feedback.wxss */
-.title {
-  margin-top: 55rpx;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-color: transparent;
-  font-family: PingFangSC-Semibold;
-  font-size: 45rpx;
-  font-weight: 650;
-  line-height: normal;
-  color: rgb(0, 0, 0);
+page {
+  background-image: url('https://chenxuan.online/storage/QA/background.jpg');
+  background-attachment: fixed;
+  background-size: 100% 91%;
+  background-repeat: no-repeat;
 }
-.category {
-  margin-left: 65rpx;
-  margin-top: 43rpx;
+.communication {
+  padding-top: 70rpx;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
 }
-.category-title {
-  font-family: PingFangSC-Semibold;
-  font-size: 32rpx;
-  font-weight: 650;
-  color: rgb(127, 127, 127);
+.communication view {
+  margin-bottom: 10rpx;
 }
-.category-icon {
-  margin-top: 15rpx;
-  width: 313rpx;
-  height: 72rpx;
-  opacity: 0.5;
-  border-radius: 0px 15rpx 15rpx;
-  background-color: rgb(217, 0, 27);
+.hidden-bottom {
+  height: 10%;
+  width: 150rpx;
 }
-.category-input {
-  top: 4rpx;
-  left: 2rpx;
-  position: relative;
-  width: 313rpx;
-  height: 72rpx;
-  border-radius: 0px 15rpx 15rpx;
-  background-color: rgba(255, 255, 0, 0.804);
-  padding-left: 10rpx;
-  color: #fff;
-  line-height: 72rpx;
+.bottom {
+  min-height: 10%;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
-.content {
-  margin-top: 30rpx;
-  margin-left: 65rpx;
-  margin-right: 65rpx;
+.bottom-input {
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  width: 580rpx;
+  min-height: 75rpx;
+  border-radius: 15rpx;
+  background-color: rgb(255, 255, 255);
+  margin-right: 25rpx;
+  line-height: 75rpx;
 }
-.content-title {
-  font-family: PingFangSC-Semibold;
-  font-size: 32rpx;
-  font-weight: 650;
-  color: rgb(127, 127, 127);
-}
-.content-input {
-  margin-top: 15rpx;
-  height: 495rpx;
-  border-radius: 0px 55rpx 55rpx;
-  background-color: rgb(2, 167, 240);
-  padding-left: 10rpx;
-  color: #fff;
-  line-height: 72rpx;
-}
-.btn {
-  width: 90rpx;
-  height: 90rpx; 
-  border-radius: 50%;
-  margin-top: 50rpx;
-  margin-right: 68rpx;
-  background-color: rgb(96, 119, 251);
-  padding: 0;
-}
-.btn image {
-  width: 60rpx;
-  height: 60rpx; 
-  margin-left: 50%;
-  margin-top: 50%;
-  transform: translate(-50%, -50%) rotate(180deg);
-}
-.subscript {
-  margin-top: 60rpx;
+.bottom-send {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
 }

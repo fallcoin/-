@@ -9,7 +9,6 @@ page {
   height: 80rpx;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(121, 121, 121);
   border-radius: 15px;
   background-color: rgb(96, 119, 251);
   font-family: Arial Bold;
@@ -24,13 +23,12 @@ page {
   margin-left: 35rpx;
   margin-right: 35rpx;
   border-width: 1rpx;
-  border-style: solid;
-  border-color: rgb(121, 121, 121);
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   padding-top: 20rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
+  padding-bottom: 50rpx;
 }
 .feedback {
   margin-top: 50rpx;
@@ -41,7 +39,6 @@ page {
   opacity: 0.5;
   border-radius: 0px 15px 15px;
   background-color: rgb(217, 0, 27);
-  margin-bottom: 50rpx;
 }
 .feedback2 {
   position: relative;
@@ -59,7 +56,7 @@ page {
   width: 473rpx;
   height: 60rpx;
   border-radius: 0px 55px 55px;
-  background-color: rgb(2, 167, 240);
+  background-color: rgb(16, 48, 224);
   font-family: Arial-Black;
   font-size: 30rpx;
   font-weight: 900;

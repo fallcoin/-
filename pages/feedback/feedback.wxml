@@ -1,20 +1,10 @@
-<!--pages/feedback/feedback.wxml-->
-<view class='title'>
-  <text>问题反馈</text>
-</view>
-<view class='category'>
-  <text class='category-title'>问题分类</text>
-  <view class='category-icon'>
-    <input class='category-input'></input>
+<view class='communication'>
+  <view wx:for="{{feedbackData}}" wx:key="{{index}}">
+    <User isUser="{{item.isUser}}" avatar="{{ item.avatar }}" comstr="{{ item.comstr }}"/>
   </view>
 </view>
-<view class='content'>
-  <text class='content-title'>问题详情</text>
-  <textarea class='content-input' type='texarea'></textarea>
-</view>
-<button class='btn'>
-  <image src='../../asset/arrow.png'></image>
-</button>
-<view class='subscript'>
-  <Subscript />
+<view class='hidden-bottom'></view>
+<view class='bottom'>
+  <textarea value='{{feedBackStr}}' bindconfirm="endsearchList" class='bottom-input' bindinput="getInfo" auto-height="true"></textarea>
+  <image src='../../asset/send.png' class='bottom-send' bindtap='submit'></image>
 </view>

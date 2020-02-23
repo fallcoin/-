@@ -1,0 +1,40 @@
+/* component/user/user.wxss */
+.service {
+  display: flex;
+  margin-left: 40rpx;
+  align-items: flex-start;
+}
+.user {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40rpx;
+  align-items: flex-start;
+}
+.avatar {
+  width: 75rpx;
+  height: 75rpx;
+  border: solid 1px rgb(121, 121, 121);
+  border-radius: 15rpx;
+  background-color: rgb(255, 255, 255);
+}
+.communication {
+  padding-left: 18rpx;
+  padding-right: 18rpx;
+  border: solid 1rpx rgb(121, 121, 121);
+  border-radius: 15rpx;
+  background-color: rgb(255, 255, 255);
+  min-height: 100rpx;
+  max-width: 400rpx;
+  line-height: 75rpx;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  word-break:break-all;
+}
+.service-communication {
+  margin-left: 45rpx;
+}
+.user-communication {
+  margin-right: 45rpx;
+}

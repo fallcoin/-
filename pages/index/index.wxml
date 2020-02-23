@@ -1,13 +1,48 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<image src='../../image/bg.png' class='bg'></image>
+<view class='top'>
+  <view class='blue'></view>
+  <SearchBar />
+</view>
+
+<swiper 
+  class='swiper' 
+  autoplay='true' 
+  circular='true' 
+  bindchange='swiperChange'
+>
+  <swiper-item wx:for='{{swiperItems}}' wx:key='{{index}}'>
+    <image src='{{item}}' bindtap="swipclick"></image>
+  </swiper-item>
+</swiper>
+
+<view class='nav'>
+  <view wx:for="{{category}}" bindtap='directToCategory' wx:key="{{item.id}}" data-key='{{item.key}}'>
+    <view>
+      <image src='{{item.src}}'></image>
+    </view>
+    <text>{{item.name}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+
+<view class='question'>
+  <view class='question-title'>
+    <view class='question-title-line'></view>
+    <text class='question-title-name'>热门问题</text>
   </view>
+  <!-- <List id="itemList" url="{{dataUrl}}"/> -->
+  <view wx:for="{{hotQuestions}}" 
+  class='hotQuestion' 
+  bindtap='directToPage' 
+  data-id='{{item.aid}}'
+  data-title='{{item.title}}'
+  wx:key='{{index}}'
+  bindlongtap='directToMain2'>
+    <view class='tip'>HOT</view>
+    <text class='item-title'>{{item.title}}</text>
+  </view>
+</view>
+
+<view class="subscript">
+  <Subscript />
 </view>

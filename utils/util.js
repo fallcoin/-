@@ -9,14 +9,16 @@ const requestPromise = myUrl => {
 }
 const getTitle = (page, searchUrl) => {
   return new Promise((resolve) => {
-    requestPromise(`${searchUrl}${page + 1}`).then(res => {
+    requestPromise(`${searchUrl}${page + 1}`)
+    .then(res => {
       resolve(res.data.data)
     })
   });
 }
 const getLabel = id =>{
   return new Promise(resolve => {
-    requestPromise(`https://chenxuan.online/api/preview/type/${id}`).then(res => {
+    requestPromise(`https://chenxuan.online/api/preview/type/${id}`)
+    .then(res => {
       resolve(res.data);
     })
   })

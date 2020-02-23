@@ -1,5 +1,5 @@
 <view class='box'>
-  <view class='search'>
+  <view class='search' >
     <image src='../../image/search.png' class='search-icon'></image>
     <view class='split-line'></view>
     <input 
