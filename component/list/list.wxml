@@ -10,5 +10,9 @@
     <Loading></Loading>
 </view>
 <view wx:if="{{isEmpty}}">
-  <view class='no-result'>没有任何结果</view>
+  <view class='feedback'>
+    <view class='feedback2'>
+      <view class='feedback3' bindtap='directToFeedback'>没有任何结果？ 点击反馈</view>
+    </view>
+  </view>
 </view>

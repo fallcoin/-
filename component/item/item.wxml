@@ -1,5 +1,5 @@
 <!--component/item/item.wxml-->
-<view class='question' bindtap='showContent'>
+<view class='question' bindtap='showContent' animation="{{move}}">
   <text class='question-title'>{{question}}</text>
   <text class='question-label'>{{label}}</text>
 </view>

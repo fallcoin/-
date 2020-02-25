@@ -16,7 +16,7 @@
   width: 4rpx;
   height: 51rpx;
   line-height: 72rpx;
-  background-color: gray;
+  background-color: rgb(190, 190, 190);
 }
 .search-input {
   padding-left: 10rpx;

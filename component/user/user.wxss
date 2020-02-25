@@ -11,30 +11,49 @@
   align-items: flex-start;
 }
 .avatar {
-  width: 75rpx;
-  height: 75rpx;
-  border: solid 1px rgb(121, 121, 121);
+  width: 65rpx;
+  height: 65rpx;
   border-radius: 15rpx;
   background-color: rgb(255, 255, 255);
 }
 .communication {
   padding-left: 18rpx;
   padding-right: 18rpx;
-  border: solid 1rpx rgb(121, 121, 121);
   border-radius: 15rpx;
   background-color: rgb(255, 255, 255);
-  min-height: 100rpx;
   max-width: 400rpx;
-  line-height: 75rpx;
-  font-size: 35rpx;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
   word-break:break-all;
 }
 .service-communication {
   margin-left: 45rpx;
+  display: flex;
 }
 .user-communication {
   margin-right: 45rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.service-triangle {
+  margin-left: -30rpx;
+  width: 0rpx;
+  height: 0rpx;
+  border-width: 0 15rpx 40rpx;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  transform: rotate(-90deg);
+  margin-top: 10rpx;
+  margin-right: -10rpx;
+}
+.user-triangle {
+  margin-right: -30rpx;
+  width: 0rpx;
+  height: 0rpx;
+  border-width: 0 15rpx 40rpx;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  transform: rotate(-270deg);
+  margin-top: 8rpx;
+  margin-left: -12rpx;
 }

@@ -24,6 +24,14 @@ Component({
       })
     }
   },
-  attached : function() {
+  ready : function() {
+    const animation = wx.createAnimation({
+      duration: 1000,
+      timingFunction: `ease`
+    })
+    animation.opacity(1).translateX(0).step()
+    this.setData({
+      move: animation.export()
+    })
   }
 })

@@ -2,7 +2,7 @@
 page {
   background-image: url('https://chenxuan.online/storage/QA/background.jpg');
   background-attachment: fixed;
-  background-size: 100% 91%;
+  background-size: 100% 93.5%;
   background-repeat: no-repeat;
 }
 .communication {
@@ -19,7 +19,7 @@ page {
   width: 150rpx;
 }
 .bottom {
-  min-height: 10%;
+  min-height: 7%;
   width: 100%;
   background-color: rgb(244, 244, 244);
   position: fixed;
@@ -35,11 +35,10 @@ page {
   padding-left: 15rpx;
   padding-right: 15rpx;
   width: 580rpx;
-  min-height: 75rpx;
   border-radius: 15rpx;
   background-color: rgb(255, 255, 255);
   margin-right: 25rpx;
-  line-height: 75rpx;
+  font-size: 45rpx;
 }
 .bottom-send {
   width: 50rpx;

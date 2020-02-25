@@ -29,23 +29,12 @@ Page({
   },
   onLoad: function () {
     getTitle(0, 'https://chenxuan.online/api/view?page=')
-      .then(data => {
-        this.data.hotQuestions = data.splice(0, 4);
-        this.setData({
-          hotQuestions: this.data.hotQuestions
-        })
+    .then(data => {
+      this.data.hotQuestions = data.splice(0, 4);
+      this.setData({
+        hotQuestions: this.data.hotQuestions
       })
-  },
-  getUserInfo: function(e) {
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
     })
-  },
-  //.......................................................
-  onReachBottom: function () {
-    //this.itemList.setTitle();
   },
   directToCategory: function (e) {
     wx.navigateTo({
@@ -63,9 +52,14 @@ Page({
       url: `../content/content?id=${e.currentTarget.dataset.id}&title=${e.currentTarget.dataset.title}`
     })
   },
-  directToMain2: function () {
-    wx.navigateTo({
-      url: `../main2/main2`
+  onReady: function() {
+    const animation = wx.createAnimation({
+      duration: 1000,
+      timingFunction: `ease`
+    })
+    animation.opacity(1).translateX(0).step()
+    this.setData({
+      move: animation.export()
     })
   }
 })
