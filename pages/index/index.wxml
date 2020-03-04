@@ -1,10 +1,13 @@
 <!--index.wxml-->
+
+<!-- top部分 -->
 <image src='../../image/bg.png' class='bg'></image>
 <view class='top'>
   <view class='blue'></view>
   <SearchBar />
 </view>
 
+<!-- 轮播图 -->
 <swiper 
   class='swiper' 
   autoplay='true' 
@@ -16,6 +19,7 @@
   </swiper-item>
 </swiper>
 
+<!-- 分类图标 -->
 <view class='nav'>
   <view wx:for="{{category}}" bindtap='directToCategory' wx:key="{{item.id}}" data-key='{{item.key}}'>
     <view>
@@ -25,6 +29,7 @@
   </view>
 </view>
 
+<!-- 热门问题 -->
 <view class='question' >
   <view class='question-title'>
     <view class='question-title-line'></view>

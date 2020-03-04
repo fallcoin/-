@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "List": "/component/list/list",
-    "Subscript": "/component/subscript/subscript"
+    "SearchBar": "/component/searchBar/searchBar"
   }
 }

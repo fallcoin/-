@@ -4,8 +4,6 @@ const app = getApp()
 const { getTitle } = require('../../utils/util.js');
 Page({
   data: {
-    questionTitleData: [],
-    dataUrl: `https://chenxuan.online/api/view?page=`,
     category: [{
       name: `常见问题`,
       key: `常见问题`,
@@ -37,6 +35,7 @@ Page({
     })
   },
   directToCategory: function (e) {
+    // 进入分类页面
     wx.navigateTo({
       url: `../category/category?key=${e.currentTarget.dataset.key}`
     })
@@ -48,6 +47,7 @@ Page({
     this.data.swiperCurrent = e.detail.current;
   },
   directToPage: function (e) {
+    // 点击问题时前往该问题页面
     wx.navigateTo({
       url: `../content/content?id=${e.currentTarget.dataset.id}&title=${e.currentTarget.dataset.title}`
     })

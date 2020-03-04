@@ -7,6 +7,3 @@
     <List id="itemList" url="{{dataUrl}}"/>
   </view>
 </view>
-<view class="subscript">
-  <Subscript />
-</view>

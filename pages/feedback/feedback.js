@@ -43,16 +43,22 @@ Page({
     }
   },
   getInfo: function (e) {
+    // 用户输入时，对数据进行双向绑定
     if (e.detail.value)
       this.data.feedBackStr = e.detail.value.trim()
-    else
-      wx.showToast({
-        title: '未输入内容',
-        icon: 'none'
-      })
   },
   submit: function () {
+    // 用户点击提交
     if (this.data.feedBackStr) {
+      // 输入框存在内容
+      if (this.data.feedBackStr.length > 50) {
+        wx.showToast({
+          title: '内容不得多于50字',
+          icon: 'none'
+        })
+        return
+      }
+      
       this.data.feedbackData.push({
         isUser: true,
         avatar: this.data.userInfo.avatarUrl,
@@ -73,6 +79,7 @@ Page({
         console.log(err)
       })
     } else {
+      // 不存在内容
       wx.showToast({
         title: '未输入内容',
         icon: 'none'

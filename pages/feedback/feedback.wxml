@@ -1,8 +1,11 @@
+<!-- 聊天界面 -->
 <view class='communication'>
   <view wx:for="{{feedbackData}}" wx:key="{{index}}">
     <User isUser="{{item.isUser}}" avatar="{{ item.avatar }}" comstr="{{ item.comstr }}"/>
   </view>
 </view>
+
+<!-- 底部输入部分 -->
 <view class='hidden-bottom'></view>
 <view class='bottom'>
   <textarea value='{{feedBackStr}}' bindconfirm="endsearchList" class='bottom-input' bindinput="getInfo" auto-height="true"></textarea>

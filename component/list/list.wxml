@@ -1,4 +1,5 @@
 <!--component/list/list.wxml-->
+<!-- 数据初始化结束后显示 -->
 <view wx:if="{{compelete}}">
   <view class='question-list'>
     <view wx:for="{{questionTitleData}}" class='item' wx:key="{{index}}">
@@ -6,13 +7,28 @@
     </view>
   </view>
 </view>
+
+<!-- 加载图标 -->
 <view style='{{loading}}' class='loading'>
     <Loading></Loading>
 </view>
+
+<!-- 列表无结果显示 -->
 <view wx:if="{{isEmpty}}">
-  <view class='feedback'>
-    <view class='feedback2'>
-      <view class='feedback3' bindtap='directToFeedback'>没有任何结果？ 点击反馈</view>
+  <image src='../../asset/canNotFind.png' class='canNotFind'></image>
+  <view class='empty-bottom'>
+    <view class='feedback'>
+      <view class='feedback2'>
+        <view class='feedback3' bindtap='directToFeedback'>没有任何结果？ 点击反馈</view>
+      </view>
+    </view>
+    <view class="subscript">
+      <Subscript />
     </view>
   </view>
+</view>
+
+<!-- 版权标志 -->
+<view class="subscript" wx:if="{{!isEmpty}}">
+  <Subscript />
 </view>

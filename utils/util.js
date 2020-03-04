@@ -7,7 +7,9 @@ const requestPromise = myUrl => {
     })
   })
 }
+
 const getTitle = (page, searchUrl) => {
+  // 获取问题标题
   return new Promise((resolve) => {
     requestPromise(`${searchUrl}${page + 1}`)
     .then(res => {
@@ -15,7 +17,9 @@ const getTitle = (page, searchUrl) => {
     })
   });
 }
+
 const getLabel = id =>{
+  // 获取问题标签
   return new Promise(resolve => {
     requestPromise(`https://chenxuan.online/api/preview/type/${id}`)
     .then(res => {
@@ -23,6 +27,7 @@ const getLabel = id =>{
     })
   })
 }
+
 module.exports = {
   requestPromise: requestPromise,
   getTitle: getTitle,

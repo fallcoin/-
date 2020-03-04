@@ -8,7 +8,6 @@
     "component/list/list",
     "pages/category/category",
     "component/subscript/subscript",
-    "pages/main2/main2",
     "pages/feedback/feedback",
     "component/user/user"
   ],

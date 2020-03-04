@@ -12,11 +12,13 @@
   top: 50%;
   transform: translate(-50%,-50%);
 }
-.feedback {
-  position: fixed;
-  top: 50%;
+.empty-bottom {
+  position: absolute;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.feedback {
   width: 457rpx;
   height: 60rpx;
   opacity: 0.5;
@@ -46,4 +48,15 @@
   line-height: 60rpx;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+.canNotFind {
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translateX(-50%);
+}
+.subscript {
+  margin-right: 30rpx;
+  margin-top: 30rpx;
 }

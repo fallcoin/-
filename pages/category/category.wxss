@@ -16,7 +16,3 @@ page {
   margin-left: 35rpx;
   margin-right: 35rpx;
 }
-.subscript {
-  margin-top: 35rpx;
-  margin-bottom: 20rpx;
-}
