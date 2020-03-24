@@ -1,7 +1,7 @@
 <!--pages/category/category.wxml-->
-<view class='search-bar'>
+<!-- <view class='search-bar'>
   <SearchBar />
-</view>
+</view> -->
 <view class='list'>
   <view wx:if="{{dataUrl}}">
     <List id="itemList" url="{{dataUrl}}"/>

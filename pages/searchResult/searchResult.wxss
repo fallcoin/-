@@ -2,10 +2,10 @@
 page {
   background-color: rgba(215, 215, 215, 0.2);
 }
-.search {
+/* .search {
   margin: 0 50rpx;
   margin-top: 10rpx;
-}
+} */
 .itemlist {
   margin-top: 20rpx;
   margin-left: 35rpx;

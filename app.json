@@ -9,7 +9,8 @@
     "pages/category/category",
     "component/subscript/subscript",
     "pages/feedback/feedback",
-    "component/user/user"
+    "component/user/user",
+    "component/navbar/navbar"
   ],
   "window": {
     "backgroundTextStyle": "light",

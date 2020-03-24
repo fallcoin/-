@@ -2,7 +2,7 @@
 page {
   background-color: rgba(215, 215, 215, 0.2);
 }
-.search-bar .search {
+/* .search-bar .search {
   border-color: #fff;
 }
 .search-bar {
@@ -10,7 +10,7 @@ page {
   top: 0;
   padding: 10rpx 0;
   margin: 0 35rpx;
-}
+} */
 .list {
   margin-top: 20rpx;
   margin-left: 35rpx;

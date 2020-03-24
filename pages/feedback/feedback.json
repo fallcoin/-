@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "Subscript": "/component/subscript/subscript",
-    "User": "/component/user/user"
-  }
+    "User": "/component/user/user",
+    "nav-bar": "/component/navbar/navbar"
+  },
+  "navigationStyle": "custom"
 }

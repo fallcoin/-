@@ -1,10 +1,14 @@
 <!--pages/content/content.wxml-->
-<view class='title'>{{title}}</view>
-<view class='content'>
-  <rich-text nodes="{{content}}"></rich-text>
-  <view class='feedback'>
-    <view class='feedback2'>
-      <view class='feedback3' bindtap='directToFeedback'>没有想问的问题？ 点击反馈</view>
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
+<view class='home-page' style='margin-top: {{height}}px'>
+  <view class='title'>{{title}}</view>
+  <view class='content'>
+    <rich-text nodes="{{content}}"></rich-text>
+    <view class='feedback'>
+      <view class='feedback2'>
+        <view class='feedback3' bindtap='directToFeedback'>没有想问的问题？ 点击反馈</view>
+      </view>
     </view>
   </view>
 </view>
